@@ -1,4 +1,31 @@
-# ECG-Imbalanced-Data
+# ECG-Imbalanced-Data  
+
+# How to run  
+## 0. Prerequisite
++ Download mitbih_train.csv and mitbih_test.csv from [ECG Data](https://www.kaggle.com/shayanfazeli/heartbeat)  
++ Put csv files to 'Data' folder  
+
+## 1. If possible, please use jupyter notebook to view the file (ECG_Classify.ipynb)  
++ I have coded with CoLab, since I don't have an access to any private GPU.
+
+## 2. Choosing different augmentation methods
++ In 'Choose Augmentation' Secction, replace (X_augmented, Y_augmented) into (X_train, Y_train), (X_train_smote,  Y_train_smote), (X_train_ada, Y_train_ada)
+
+   train_ds = MyDataset(Signal = pd.DataFrame(X_augmented), Label = pd.Series(Y_augmented))
+
+## 3. Choose whether or not to use weight in criterion  
++ In 'Transiter' function, modify the variable 'weight' and choose between  
+
+   criterion = nn.CrossEntropyLoss().to(device)
+  
+and
+   
+   criterion = nn.CrossEntropyLoss(weight = weight).to(device)
+   
+ 
+
+
+# Project Summary
 
 ## 0. Data Info
 + Input: 187 long time series 1-D data
