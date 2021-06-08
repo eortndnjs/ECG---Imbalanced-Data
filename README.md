@@ -10,6 +10,7 @@
 
 ## 2. Choosing different augmentation methods
 In 'Choose Augmentation' Secction, replace (X_augmented, Y_augmented) into (X_train, Y_train), (X_train_smote,  Y_train_smote), (X_train_ada, Y_train_ada)  
+
 '''
 train_ds = MyDataset(Signal = pd.DataFrame(X_augmented), Label = pd.Series(Y_augmented))  
 '''
