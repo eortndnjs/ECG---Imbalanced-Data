@@ -18,15 +18,13 @@ train_ds = MyDataset(Signal = pd.DataFrame(X_augmented), Label = pd.Series(Y_aug
 ## 3. Choose whether or not to use weight in criterion  
 + In 'Transiter' function, modify the variable 'weight' and choose between  
 
-
-    criterion = nn.CrossEntropyLoss().to(device)
-  
-  
+~~~
+criterion = nn.CrossEntropyLoss().to(device)
+~~~
 and
-
-
-   criterion = nn.CrossEntropyLoss(weight = weight).to(device)
-   
+~~~
+criterion = nn.CrossEntropyLoss(weight = weight).to(device)
+~~~   
 
 
 
