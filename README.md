@@ -22,11 +22,9 @@
    + Random Noise: Add random jitter to the signal  
    + Pool: Reduce the temporal resolution  
    + Drift: Change the slope of the signal  
-      + This may change the characteristic of the signal
+  ![image](https://github.mit.edu/storage/user/13072/files/b67a6680-c83c-11eb-94c7-f45527095ea8)  
 
-![image](https://github.mit.edu/storage/user/13072/files/21c33900-c83b-11eb-8b6e-7c5844fd7e5e) ![image](https://github.mit.edu/storage/user/13072/files/b67a6680-c83c-11eb-94c7-f45527095ea8)  
-
- + ^ Signal augmented with TSAug, with / without Drift
+ + ^ Signal augmented with TSAug
 
 ## 3. My Trials  
 + A. Without Augmentation : For comparison
