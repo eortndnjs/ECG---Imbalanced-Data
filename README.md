@@ -67,4 +67,11 @@ criterion = nn.CrossEntropyLoss(weight = weight).to(device)
 ## 4. Results (Since Test Data is imbalanced, F1 score metric is used)
 ![image](https://github.mit.edu/storage/user/13072/files/f3555600-c85a-11eb-92b1-788502c03661)
 
-
+## 5. More possible tries 
++ Tune hyperparameters such as batch size, learning rate, augmentation factor, ...
++ Mix smote/adasyn + time series augmentation
++ Use GAN for data augmentation
++ Switch network, such as CNN-LSTM
++ Mix signal & Mix label  
+   + For ex, mix 80% of N signal and 20% of S signal and mark with (N,S,V,F,Q) = (0.8, 0.2, 0, 0, 0) label.
+   + Have been tried in computer vision, [mixup training](https://arxiv.org/pdf/1710.09412.pdf)
