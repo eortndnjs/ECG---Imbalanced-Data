@@ -8,8 +8,8 @@
 + Train/Validation Ratio: 3 to 1 (To generate general model)  
    
 ## 1. Network Info
-+ LSTM : Advanced structure of RNN, which memorizes former information in the time series signal
-+ Batch Size: 256 (As large as CoLab can handle)
++ LSTM : Advanced structure of RNN, which memorizes former information in the time series signal  (Sample Code from [LSTM](https://github.com/yunjey/pytorch-tutorial/blob/master/tutorials/02-intermediate/recurrent_neural_network/main.py#L39-L58))
++ Batch Size: 256 (As large as CoLab can handle)  
 + Learning Rate : 1e-3 (Which shows fairly good performance in the case)  
 + Optimizer : Adam (Known as one of the best optimizers for RNN)  
 + Criterion : Cross Entropy Loss
